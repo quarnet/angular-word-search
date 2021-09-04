@@ -1,0 +1,27 @@
+.cell 
+    border: 1px solid #ccc
+    text-align: center
+    padding: 1px
+    font-weight: 500
+    cursor: pointer
+    -moz-user-select: none
+    -webkit-user-select: none
+    -ms-user-select: none
+    -o-user-select: none
+    user-select: none
+
+
+    &.active
+        font-weight: 700
+        background-color: #00b4ff8f
+
+    &.neighbour
+        background-color: #f7ff0045
+
+    &.result
+        background-color: green
+
+    &:hover
+        font-weight: 700
+        border: 1px solid #fff
+        box-shadow: 0px 1px 11px 1px rgb(12 12 12)

@@ -1,0 +1,14 @@
+<div
+  class="cell"
+  [ngStyle]="{
+    background: cell?.color
+  }"
+  [ngClass]="{
+    active: isActive,
+    neighbour: isNeighbour,
+    result: isResultCell
+  }"
+  (click)="onclick()"
+>
+  {{ cell!.value | uppercase }}
+</div>

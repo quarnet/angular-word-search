@@ -1,0 +1,5 @@
+<div *ngIf="notification.appMessages.length">
+  <div *ngFor="let msg of notification.appMessages; let i = index">
+    <ngb-alert [type]="'info'" (closed)="close(i)">{{ msg }}</ngb-alert>
+  </div>
+</div>

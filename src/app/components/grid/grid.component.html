@@ -1,0 +1,16 @@
+<div class="grid-container pl-1 pb-3" *ngIf="gridCells && gridCells.length">
+  <div
+    class="row"
+    *ngFor="let i of [].constructor(totalRows); let indexI = index"
+  >
+    <div
+      class="col"
+      *ngFor="let j of [].constructor(totalCols); let indexJ = index"
+    >
+      <app-cell
+        [cell]="gridCells[indexI][indexJ]"
+        (onCellClick)="onClick($event)"
+      ></app-cell>
+    </div>
+  </div>
+</div>
